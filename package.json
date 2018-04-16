@@ -1,0 +1,39 @@
+{
+  "name": "react-global-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon index.js --exec babel-node --presets env"
+  },
+  "repository": {
+    "babel-node": "babel-node",
+    "type": "git",
+    "url": "git+https://github.com/atalanov/react-global-training.git"
+  },
+  "author": "atalanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atalanov/react-global-training/issues"
+  },
+  "homepage": "https://github.com/atalanov/react-global-training#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.3.1"
+  }
+}
