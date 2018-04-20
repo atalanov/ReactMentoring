@@ -1,8 +1,8 @@
 const Jenres = {
-    Drama: "Drama",
-    Comedy: "Comedy",
-    Action: "Action",
-    Thriller: "Thriller",
+    Drama: 'Drama',
+    Comedy: 'Comedy',
+    Action: 'Action',
+    Thriller: 'Thriller',
 };
 
 const previews = [{
@@ -30,27 +30,25 @@ class MovieList extends React.Component {
         const listPreviews = previews.map(item => (<MoviePreview key={item.id} item={item} />));
         console.log(listPreviews);
         return (
-            <div>
-                {listPreviews}
+          <div className={this.props.className}>
+              {listPreviews}
             </div>
         );
     }
 }
 
-const MoviePreview = (props) => {
-    return (
+const MoviePreview = (props) => (
         <div>
             <MovieImage src={props.item.posterUrl} />
             <MovieDescription jenre={props.item.jenre} year={props.item.year} name={props.item.name} />
         </div>
     );
-};
 
 class MovieImage extends React.PureComponent {
     render() {
         return (
-            <div>
-                <img src={this.props.src} />
+          <div>
+              <img src={this.props.src} />
             </div>
         );
     }
@@ -59,12 +57,12 @@ class MovieImage extends React.PureComponent {
 class MovieDescription extends React.PureComponent {
     render() {
         return (
-        <div>
-            <h4>{this.props.name}</h4>
-            <p>{this.props.jenre} ({this.props.year})</p>
+          <div>
+          <h4>{this.props.name}</h4>
+          <p>{this.props.jenre} ({this.props.year})</p>
         </div>
         );
     }
 }
-const movieList =  React.createElement(MovieList, {});
+const movieList = React.createElement(MovieList, { className: 'class1' });
 ReactDOM.render(movieList, document.getElementById('root'));
