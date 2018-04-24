@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "babel-node webpack --config ./config/webpack.config.js --bail -p --mode production",
+    "build": "webpack --config ./config/webpack.config.babel.js --bail -p --mode production",
     "start": "webpack-dev-server --config config/webpack.config.babel.js"
   },
   "repository": {
