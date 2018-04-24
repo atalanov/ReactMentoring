@@ -5,13 +5,13 @@ import path from 'path';
 
 export default [
     new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, './src/index.html'),
+        template: path.resolve(__dirname, '../src/index.html'),
         inject: 'body',
         minify: false,
     }),
     new UglifyJsWebpackPlugin({
         test: /\.js($|\?)/i,
-        include: path.resolve(__dirname, './src'),
+        include: path.resolve(__dirname, '../src'),
         exclude: './node_modules',
         sourceMap: true,
     }),

@@ -23,7 +23,7 @@ export default {
         }),
     }, {
         test: /\.html$/,
-        exclude: path.resolve(__dirname, './src/index.html'),
+        exclude: path.resolve(__dirname, '../src/index.html'),
         loader: 'ng-cache-loader?prefix=[dir]/[dir]',
     }],
 };
