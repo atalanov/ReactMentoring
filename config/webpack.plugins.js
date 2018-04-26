@@ -15,5 +15,5 @@ export default [
         exclude: './node_modules',
         sourceMap: true,
     }),
-    new ExtractTextWebpackPlugin('styles.css'),
+    new ExtractTextWebpackPlugin('style.css'),
 ];

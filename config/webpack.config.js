@@ -12,7 +12,7 @@ export default (env, options) => {
             app: './src/index.js',
         },
         output: {
-            path: path.resolve(__dirname, './dist'),
+            path: path.resolve(__dirname, '../dist'),
             publicPath: 'http://localhost:3000/',
             filename: '[name].bundle.js',
             chunkFilename: '[name].bundle.js',
