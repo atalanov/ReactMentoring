@@ -1,0 +1,38 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    margin:15px auto;
+    max-width: 1000px;
+    background:#eeeeee;
+    border-radius: 10px;
+    padding:15px;
+}
+
+#root>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#root>div>div {
+    width: 30%;
+    min-width:150px;
+}
+
+#root>div>div img{
+    min-width:150px;
+    width:100%;
+}
+#root>div>div p {
+    font-family: Arial;
+    font-size: 1rem;
+    color:#666666;
+}
+#root>div>div h4 {
+    font-family: Arial;
+    font-size: 1.2rem;
+    color:#333333;
+}
