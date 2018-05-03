@@ -13,7 +13,7 @@ export default (env, options) => {
         },
         output: {
             path: path.resolve(__dirname, '../dist'),
-            publicPath: 'http://localhost:3000/',
+            publicPath: '/',
             filename: '[name].bundle.js',
             chunkFilename: '[name].bundle.js',
         },
