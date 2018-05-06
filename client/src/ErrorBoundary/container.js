@@ -1,5 +1,6 @@
 import React from 'react';
 import { Logger as logger } from './utils';
+import Component from './component';
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -7,13 +8,16 @@ class ErrorBoundary extends React.Component {
       this.state = { hasError: false };
     }
     componentDidCatch(error, info) {
-      this.setState({ hasError: true });
+      this.setState({ 
+        hasError: true,
+        stack: info.componentStack,
+        message: error.toString()
+       });
       logger.log(error, info);
     }
     render() {
       if (this.state.hasError) {
-        // You can render any custom fallback UI
-        return <h1>Something went wrong.</h1>;
+        return <Component componentStack={this.state.stack} message={this.state.message} />;
       }
       return this.props.children;
     }
