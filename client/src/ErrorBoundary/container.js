@@ -30,3 +30,5 @@ ErrorBoundary.propTypes = {
 ErrorBoundary.defaultProps = {
     children: undefined,
 };
+
+export default ErrorBoundary;

@@ -1,10 +1,11 @@
 import React from 'react';
-import { MovieImage, MovieDescription } from '../index';
+import MoviePreviewImage from '../MoviePreviewImage';
+import MoviePreviewDescription from '../MoviePreviewDescription';
 
 export default props => (
   <div>
-    <MovieImage src={props.item.posterUrl} />
-    <MovieDescription
+    <MoviePreviewImage src={props.item.posterUrl} />
+    <MoviePreviewDescription
       jenre={props.item.jenre}
       year={props.item.year}
       name={props.item.name}
