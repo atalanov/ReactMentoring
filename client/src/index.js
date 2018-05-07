@@ -7,8 +7,8 @@ import ErrorBoundary from './ErrorBoundary';
 import App from './App';
 
 render(
-    <ErrorBoundary>
-        <App />
-    </ErrorBoundary>,
+  <ErrorBoundary>
+    <App />
+  </ErrorBoundary>,
     document.getElementById('root'),
 );
