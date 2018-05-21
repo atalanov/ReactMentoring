@@ -5,7 +5,14 @@
         "no-console": "off",
         "indent": "off",
         "react/jsx-filename-extension": "off",
-        "no-unused-vars":"off",
-        "max-len":"off"
+        "no-unused-vars": "off",
+        "max-len": "off",
+        "react/prop-types": "off"
+    },
+    "globals": {
+        "test": true,
+        "expect": true,
+        "it": true,
+        "describe": true
     }
 }

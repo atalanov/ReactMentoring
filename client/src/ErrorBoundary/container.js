@@ -24,11 +24,4 @@ class ErrorBoundary extends React.Component {
     }
 }
 
-ErrorBoundary.propTypes = {
-    children: PropTypes.node,
-};
-ErrorBoundary.defaultProps = {
-    children: undefined,
-};
-
 export default ErrorBoundary;
