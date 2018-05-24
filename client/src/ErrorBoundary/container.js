@@ -1,5 +1,4 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
 import { Logger as logger } from './utils';
 import Component from './component';
 

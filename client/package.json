@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --coverage",
     "build": "webpack --config ./config/webpack.config.babel.js --bail -p",
-    "start": "webpack-dev-server --config config/webpack.config.babel.js"
+    "start": "webpack-dev-server --config config/webpack.config.babel.js",
+    "test:e2e": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -53,6 +54,9 @@
   "jest": {
     "setupFiles": [
       "./config/setup-tests.js"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   },
   "dependencies": {
