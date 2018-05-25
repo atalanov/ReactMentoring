@@ -1,5 +1,4 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
 import { Logger as logger } from './utils';
 import Component from './component';
 
@@ -23,12 +22,5 @@ class ErrorBoundary extends React.Component {
       return this.props.children;
     }
 }
-
-ErrorBoundary.propTypes = {
-    children: PropTypes.node,
-};
-ErrorBoundary.defaultProps = {
-    children: undefined,
-};
 
 export default ErrorBoundary;
