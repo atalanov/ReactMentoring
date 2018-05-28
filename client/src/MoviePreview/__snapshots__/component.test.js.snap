@@ -28,12 +28,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          src="/testurl"
+          src={undefined}
         />,
         <Unknown
-          jenre="Horror"
-          name="TestFilm"
-          year="2018"
+          jenre={undefined}
+          name={undefined}
+          year={undefined}
         />,
       ],
     },
@@ -44,7 +44,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "src": "/testurl",
+          "src": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -55,9 +55,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "jenre": "Horror",
-          "name": "TestFilm",
-          "year": "2018",
+          "jenre": undefined,
+          "name": undefined,
+          "year": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -74,12 +74,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            src="/testurl"
+            src={undefined}
           />,
           <Unknown
-            jenre="Horror"
-            name="TestFilm"
-            year="2018"
+            jenre={undefined}
+            name={undefined}
+            year={undefined}
           />,
         ],
       },
@@ -90,7 +90,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "src": "/testurl",
+            "src": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -101,9 +101,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "jenre": "Horror",
-            "name": "TestFilm",
-            "year": "2018",
+            "jenre": undefined,
+            "name": undefined,
+            "year": undefined,
           },
           "ref": null,
           "rendered": null,

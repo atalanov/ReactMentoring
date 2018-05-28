@@ -4,11 +4,11 @@ import MovieDescription from '../MovieDescription';
 
 export default props => (
   <div>
-    <MovieImage src={props.item.posterUrl} />
+    <MovieImage src={props.item.poster_path} />
     <MovieDescription
-      jenre={props.item.jenre}
-      year={props.item.year}
-      name={props.item.name}
+      jenre={props.item.genres.join(', ')}
+      year={props.item.release_date}
+      name={props.item.title}
     />
   </div>
 );

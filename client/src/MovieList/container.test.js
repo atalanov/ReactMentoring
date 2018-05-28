@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render } from 'enzyme';
-import MovieList from './component';
+import MovieList from './container';
 
 describe('MovieList tests', () => {
     test('Component MovieList renders correctly', () => {
