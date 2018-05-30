@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default props => (
-  <button>Search</button>
+  <button onClick={props.onClick}>Search</button>
 );

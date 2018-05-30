@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default props => (
-  <input type="text" />
+  <input type="text" value={props.searchText} />
 );

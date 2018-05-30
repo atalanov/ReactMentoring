@@ -6,8 +6,8 @@ import ErrorBoundary from '../ErrorBoundary';
 
 export default props => (
   <ErrorBoundary>
-    <SearchBox />
-    <SearchBySwitcher />
-    <SearchBtn />
+    <SearchBox searchText={props.filter.search} />
+    <SearchBySwitcher searchBy={props.filter.searchBy} />
+    <SearchBtn filter={props.filter} />
   </ErrorBoundary>
 );

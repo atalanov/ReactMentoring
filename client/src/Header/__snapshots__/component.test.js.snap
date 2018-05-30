@@ -18,9 +18,15 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Unknown />,
-        <SearchBySwitcher />,
-        <Unknown />,
+        <Unknown
+          searchText={undefined}
+        />,
+        <SearchBySwitcher
+          searchBy={undefined}
+        />,
+        <Unknown
+          onClick={undefined}
+        />,
       ],
     },
     "ref": null,
@@ -29,7 +35,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "searchText": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -38,7 +46,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "searchBy": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -47,7 +57,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "onClick": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -62,9 +74,15 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Unknown />,
-          <SearchBySwitcher />,
-          <Unknown />,
+          <Unknown
+            searchText={undefined}
+          />,
+          <SearchBySwitcher
+            searchBy={undefined}
+          />,
+          <Unknown
+            onClick={undefined}
+          />,
         ],
       },
       "ref": null,
@@ -73,7 +91,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "searchText": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -82,7 +102,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "searchBy": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -91,7 +113,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "onClick": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
