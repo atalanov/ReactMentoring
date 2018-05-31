@@ -1,9 +1,9 @@
 import React from 'react';
-import connect from 'react-redux';
+import { connect } from 'react-redux';
 import Component from './component';
 
 const mapStateToProps = state => ({
-    filter: state.movieListReducer.filter,
+    filter: state.reducer.filterReducer.filter,
 });
 class Header extends React.Component {
     handleClick() {

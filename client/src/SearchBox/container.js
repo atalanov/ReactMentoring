@@ -1,22 +1,28 @@
 import React from 'react';
-import connect from 'react-redux';
+import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Component from './component';
-import action from './action';
+import action from '../actions/filter-action';
 
-const mapStateToProps = state => ({
-    search: state.movieListReducer.filter.search,
-});
+const mapStateToProps = state => {
+    return {
+        search: state.reducer.filterReducer.filter.search,
+    }
+};
 
 class SearchBox extends React.Component {
-    handleChange(text) {
+    constructor(props) {
+        super(props);
+        this.actions = props.actions;
+    }
+    handleChangeFunc = (event) => {
         this.actions.changeFilterParam({
-            search: text,
+            search: event.target.value,
         });
     }
     render() {
         return (
-          <Component searchText={this.props.search} handleChange={this.handleChange} />
+          <Component searchText={this.props.search} handleChange={this.handleChangeFunc} />
         );
     }
 }

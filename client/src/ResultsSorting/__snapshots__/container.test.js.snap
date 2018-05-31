@@ -21,10 +21,12 @@ ShallowWrapper {
         "Sort by ",
         Array [
           <Unknown
+            handleClick={[Function]}
             selected={true}
-            text="release date"
+            text="release_date"
           />,
           <Unknown
+            handleClick={[Function]}
             selected={false}
             text="rating"
           />,
@@ -36,11 +38,12 @@ ShallowWrapper {
       "Sort by ",
       Object {
         "instance": null,
-        "key": "release date",
+        "key": "release_date",
         "nodeType": "function",
         "props": Object {
+          "handleClick": [Function],
           "selected": true,
-          "text": "release date",
+          "text": "release_date",
         },
         "ref": null,
         "rendered": null,
@@ -51,6 +54,7 @@ ShallowWrapper {
         "key": "rating",
         "nodeType": "function",
         "props": Object {
+          "handleClick": [Function],
           "selected": false,
           "text": "rating",
         },
@@ -71,10 +75,12 @@ ShallowWrapper {
           "Sort by ",
           Array [
             <Unknown
+              handleClick={[Function]}
               selected={true}
-              text="release date"
+              text="release_date"
             />,
             <Unknown
+              handleClick={[Function]}
               selected={false}
               text="rating"
             />,
@@ -86,11 +92,12 @@ ShallowWrapper {
         "Sort by ",
         Object {
           "instance": null,
-          "key": "release date",
+          "key": "release_date",
           "nodeType": "function",
           "props": Object {
+            "handleClick": [Function],
             "selected": true,
-            "text": "release date",
+            "text": "release_date",
           },
           "ref": null,
           "rendered": null,
@@ -101,6 +108,7 @@ ShallowWrapper {
           "key": "rating",
           "nodeType": "function",
           "props": Object {
+            "handleClick": [Function],
             "selected": false,
             "text": "rating",
           },

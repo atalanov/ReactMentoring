@@ -1,4 +1,4 @@
-import { API_URL } from './constants';
+import { API_URL } from '../constants/constants';
 
 function handleResponse(response) {
     if (!response.ok) {
