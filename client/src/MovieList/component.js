@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default props => (
-  <div>
+  <div className="row">
     {props.list}
   </div>
   );

@@ -5,10 +5,10 @@ import Movie from './component';
 describe('Movie tests', () => {
     test('Component Movie renders correctly', () => {
         const item = {
-            name: 'TestFilm',
-            jenre: 'Horror',
-            year: '2018',
-            posterUrl: '/testurl',
+            title: 'TestFilm',
+            genres: ['Horror'],
+            release_date: '2018',
+            poster_path: '/testurl',
         };
         const component = shallow(<Movie item={item} />);
         expect(component).toMatchSnapshot();

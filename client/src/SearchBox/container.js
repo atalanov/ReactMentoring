@@ -10,13 +10,9 @@ const mapStateToProps = state => {
     }
 };
 
-class SearchBox extends React.Component {
-    constructor(props) {
-        super(props);
-        this.actions = props.actions;
-    }
+export class SearchBox extends React.Component {
     handleChangeFunc = (event) => {
-        this.actions.changeFilterParam({
+        this.props.actions.changeFilterParam({
             search: event.target.value,
         });
     }

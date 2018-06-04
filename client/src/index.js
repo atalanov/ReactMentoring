@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import ErrorBoundary from './ErrorBoundary';
 import App from './App';
 import appStore from './store';
+import "bootstrap/dist/css/bootstrap.css";
 
 render(
   <Provider store={appStore}>

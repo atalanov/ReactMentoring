@@ -5,9 +5,16 @@ import SearchBySwitcher from '../SearchBySwitcher';
 import ErrorBoundary from '../ErrorBoundary';
 
 export default props => (
-  <ErrorBoundary>
-    <SearchBox searchText={props.filter.search} />
-    <SearchBySwitcher searchBy={props.filter.searchBy} />
-    <SearchBtn filter={props.filter} />
-  </ErrorBoundary>
+  <div className="row">
+    <div className="col-12">
+      <ErrorBoundary>
+        <h4>
+          Find your movie
+        </h4>
+        <SearchBox searchText={props.filter.search} />
+        <SearchBySwitcher searchBy={props.filter.searchBy} />
+        <SearchBtn filter={props.filter} />
+      </ErrorBoundary>
+    </div>
+  </div>
 );

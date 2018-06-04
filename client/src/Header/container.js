@@ -5,7 +5,7 @@ import Component from './component';
 const mapStateToProps = state => ({
     filter: state.reducer.filterReducer.filter,
 });
-class Header extends React.Component {
+export class Header extends React.Component {
     handleClick() {
         this.props.actions.get(this.props.filter);
     }

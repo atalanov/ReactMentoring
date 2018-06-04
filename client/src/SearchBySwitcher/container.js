@@ -13,7 +13,7 @@ function mapDispatchToProps(dispatch) {
         actions: bindActionCreators(action, dispatch)
     }
 }
-class SearchBySwitcher extends React.Component {
+export class SearchBySwitcher extends React.Component {
     constructor(props) {
         super(props);
         this.values = ['title', 'genres'];

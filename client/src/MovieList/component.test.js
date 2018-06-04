@@ -4,7 +4,7 @@ import Component from './component';
 
 describe('Component tests', () => {
     test('Component renders correctly', () => {
-        const component = shallow(<Component filter={{ search: '1', searchBy: 'genres' }} />);
+        const component = shallow(<Component />);
         expect(component).toMatchSnapshot();
     });
 });

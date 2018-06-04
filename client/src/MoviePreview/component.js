@@ -3,7 +3,7 @@ import MoviePreviewImage from '../MoviePreviewImage';
 import MoviePreviewDescription from '../MoviePreviewDescription';
 
 export default props => (
-  <div>
+  <div className="col col-md-4">
     <MoviePreviewImage src={props.item.poster_path} />
     <MoviePreviewDescription
       jenre={props.item.genres.join(', ')}

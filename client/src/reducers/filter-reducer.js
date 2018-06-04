@@ -10,9 +10,9 @@ const initialState = {
         filter: [],
         offset: 0,
         limit: 18,
-        pendingEvent: { event: events.UPDATE, reporter: 'initial' },
-        pending: false,
     },
+    pendingEvent: { event: events.UPDATE, reporter: 'initial' },
+    pending: false,
 };
 
 export default function reducer(state = initialState, action) {

@@ -18,29 +18,60 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(ResultsCount) />,
-        <ResultSorting />,
+        <div
+          className="col-8"
+        >
+          <Connect(ResultsCount) />
+        </div>,
+        <div
+          className="col-4 text-right"
+        >
+          <ResultSorting />
+        </div>,
       ],
+      "className": "row",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(ResultsCount) />,
+          "className": "col-8",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": <ResultSorting />,
+          "className": "col-4 text-right",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -52,29 +83,60 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(ResultsCount) />,
-          <ResultSorting />,
+          <div
+            className="col-8"
+          >
+            <Connect(ResultsCount) />
+          </div>,
+          <div
+            className="col-4 text-right"
+          >
+            <ResultSorting />
+          </div>,
         ],
+        "className": "row",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(ResultsCount) />,
+            "className": "col-8",
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": <ResultSorting />,
+            "className": "col-4 text-right",
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "div",

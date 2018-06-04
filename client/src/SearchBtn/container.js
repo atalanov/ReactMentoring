@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
     filter: state.reducer.filterReducer.filter,
 });
 
-class SearchBtn extends React.Component {
+export class SearchBtn extends React.Component {
     handleClick = (e) => {
         e.preventDefault();
         this.props.actions.listShouldUpdate(this.props.filter);

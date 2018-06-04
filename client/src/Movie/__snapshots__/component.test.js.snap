@@ -7,10 +7,12 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     item={
       Object {
-        "jenre": "Horror",
-        "name": "TestFilm",
-        "posterUrl": "/testurl",
-        "year": "2018",
+        "genres": Array [
+          "Horror",
+        ],
+        "poster_path": "/testurl",
+        "release_date": "2018",
+        "title": "TestFilm",
       }
     }
   />,

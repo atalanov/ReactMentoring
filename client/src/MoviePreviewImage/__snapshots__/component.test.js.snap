@@ -23,7 +23,9 @@ ShallowWrapper {
       "children": <img
         alt="test title"
         src="/testurl"
+        width="100%"
       />,
+      "className": "col",
     },
     "ref": null,
     "rendered": Object {
@@ -33,6 +35,7 @@ ShallowWrapper {
       "props": Object {
         "alt": "test title",
         "src": "/testurl",
+        "width": "100%",
       },
       "ref": null,
       "rendered": null,
@@ -49,7 +52,9 @@ ShallowWrapper {
         "children": <img
           alt="test title"
           src="/testurl"
+          width="100%"
         />,
+        "className": "col",
       },
       "ref": null,
       "rendered": Object {
@@ -59,6 +64,7 @@ ShallowWrapper {
         "props": Object {
           "alt": "test title",
           "src": "/testurl",
+          "width": "100%",
         },
         "ref": null,
         "rendered": null,

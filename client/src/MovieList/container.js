@@ -13,7 +13,7 @@ const mapStateToProps = state => ({
     pending: state.reducer.filterReducer.pending,
 });
 
-class MovieList extends React.Component {
+export class MovieList extends React.Component {
     render() {
         if (this.props.previews && this.props.previews.length) {
             const listPreviews = this.props.previews.map(item => (<MoviePreview key={item.id} item={item} />));

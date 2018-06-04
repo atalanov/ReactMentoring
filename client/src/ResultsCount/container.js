@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
     total: utils.formatCount(state.reducer.filterReducer.previews.total),
 });
 
-class ResultsCount extends React.Component {
+export class ResultsCount extends React.Component {
     render() {
         return (
           <ResultsCountComponent countText={this.props.total} />

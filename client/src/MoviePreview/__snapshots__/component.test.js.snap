@@ -7,10 +7,12 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Unknown
     item={
       Object {
-        "jenre": "Horror",
-        "name": "TestFilm",
-        "posterUrl": "/testurl",
-        "year": "2018",
+        "genres": Array [
+          "Horror",
+        ],
+        "poster_path": "/testurl",
+        "release_date": "2018",
+        "title": "TestFilm",
       }
     }
   />,
@@ -28,14 +30,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
-          src={undefined}
+          src="/testurl"
         />,
         <Unknown
-          jenre={undefined}
-          name={undefined}
-          year={undefined}
+          jenre="Horror"
+          name="TestFilm"
+          year="2018"
         />,
       ],
+      "className": "col col-md-4",
     },
     "ref": null,
     "rendered": Array [
@@ -44,7 +47,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "src": undefined,
+          "src": "/testurl",
         },
         "ref": null,
         "rendered": null,
@@ -55,9 +58,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "jenre": undefined,
-          "name": undefined,
-          "year": undefined,
+          "jenre": "Horror",
+          "name": "TestFilm",
+          "year": "2018",
         },
         "ref": null,
         "rendered": null,
@@ -74,14 +77,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
-            src={undefined}
+            src="/testurl"
           />,
           <Unknown
-            jenre={undefined}
-            name={undefined}
-            year={undefined}
+            jenre="Horror"
+            name="TestFilm"
+            year="2018"
           />,
         ],
+        "className": "col col-md-4",
       },
       "ref": null,
       "rendered": Array [
@@ -90,7 +94,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "src": undefined,
+            "src": "/testurl",
           },
           "ref": null,
           "rendered": null,
@@ -101,9 +105,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "jenre": undefined,
-            "name": undefined,
-            "year": undefined,
+            "jenre": "Horror",
+            "name": "TestFilm",
+            "year": "2018",
           },
           "ref": null,
           "rendered": null,
