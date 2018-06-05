@@ -1,7 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import ResultSortingComponent from './component';
+import action from '../actions/filter-action';
 
-export default class ResultSorting extends React.Component {
+const mapStateToProps = state => ({
+    filter: state.reducer.filterReducer.filter,
+});
+
+function mapDispatchToProps(dispatch) { 
+    return {
+        actions: bindActionCreators(action, dispatch)
+    }
+}
+
+export class ResultSorting extends React.Component {
     constructor(props) {
         super(props);
         this.values = ['release_date', 'rating'];
@@ -22,3 +35,5 @@ export default class ResultSorting extends React.Component {
         );
     }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(ResultSorting);

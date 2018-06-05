@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render } from 'enzyme';
-import ResultSorting from './container';
+import {ResultSorting} from './container';
 
 describe('ResultSorting Tests', () => {
     test('Component ResultSorting renders correctly', () => {
