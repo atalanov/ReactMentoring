@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render } from 'enzyme';
-import ResultsCount from './container';
+import { ResultsCount } from './container';
 
 describe('ResultsCount Tests', () => {
     test('Component ResultsCount renders correctly', () => {

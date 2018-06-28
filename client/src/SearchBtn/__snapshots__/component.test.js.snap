@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "Search",
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": "Search",
@@ -30,6 +31,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "Search",
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": "Search",

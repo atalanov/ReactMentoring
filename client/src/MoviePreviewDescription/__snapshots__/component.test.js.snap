@@ -23,13 +23,23 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h4>
-          TestFilm
+          <Link
+            replace={false}
+            to="/movies/undefined"
+          >
+            TestFilm
+          </Link>
         </h4>,
         <p>
-          Horror
-           (
-          2018
-          )
+          <Link
+            replace={false}
+            to="/movies/undefined"
+          >
+            Horror
+             (
+            2018
+            )
+          </Link>
         </p>,
       ],
     },
@@ -40,10 +50,27 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "TestFilm",
+          "children": <Link
+            replace={false}
+            to="/movies/undefined"
+          >
+            TestFilm
+          </Link>,
         },
         "ref": null,
-        "rendered": "TestFilm",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "TestFilm",
+            "replace": false,
+            "to": "/movies/undefined",
+          },
+          "ref": null,
+          "rendered": "TestFilm",
+          "type": [Function],
+        },
         "type": "h4",
       },
       Object {
@@ -51,20 +78,40 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
+          "children": <Link
+            replace={false}
+            to="/movies/undefined"
+          >
+            Horror
+             (
+            2018
+            )
+          </Link>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Horror",
+              " (",
+              "2018",
+              ")",
+            ],
+            "replace": false,
+            "to": "/movies/undefined",
+          },
+          "ref": null,
+          "rendered": Array [
             "Horror",
             " (",
             "2018",
             ")",
           ],
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": Array [
-          "Horror",
-          " (",
-          "2018",
-          ")",
-        ],
         "type": "p",
       },
     ],
@@ -78,13 +125,23 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h4>
-            TestFilm
+            <Link
+              replace={false}
+              to="/movies/undefined"
+            >
+              TestFilm
+            </Link>
           </h4>,
           <p>
-            Horror
-             (
-            2018
-            )
+            <Link
+              replace={false}
+              to="/movies/undefined"
+            >
+              Horror
+               (
+              2018
+              )
+            </Link>
           </p>,
         ],
       },
@@ -95,10 +152,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "TestFilm",
+            "children": <Link
+              replace={false}
+              to="/movies/undefined"
+            >
+              TestFilm
+            </Link>,
           },
           "ref": null,
-          "rendered": "TestFilm",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "TestFilm",
+              "replace": false,
+              "to": "/movies/undefined",
+            },
+            "ref": null,
+            "rendered": "TestFilm",
+            "type": [Function],
+          },
           "type": "h4",
         },
         Object {
@@ -106,20 +180,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
+            "children": <Link
+              replace={false}
+              to="/movies/undefined"
+            >
+              Horror
+               (
+              2018
+              )
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Horror",
+                " (",
+                "2018",
+                ")",
+              ],
+              "replace": false,
+              "to": "/movies/undefined",
+            },
+            "ref": null,
+            "rendered": Array [
               "Horror",
               " (",
               "2018",
               ")",
             ],
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Array [
-            "Horror",
-            " (",
-            "2018",
-            ")",
-          ],
           "type": "p",
         },
       ],

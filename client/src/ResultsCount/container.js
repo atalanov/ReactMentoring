@@ -1,16 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import ResultsCountComponent from './component';
 import utils from './utils';
 
-export default class ResultsCount extends React.Component {
-    constructor(props) {
-        super(props);
-        this.countText = utils.formatCount(props.count);
-    }
+const mapStateToProps = state => ({
+    total: utils.formatCount(state.reducer.filterReducer.previews.total),
+});
+
+export class ResultsCount extends React.Component {
     render() {
         return (
-          <ResultsCountComponent countText={this.countText} />
+          <ResultsCountComponent countText={this.props.total} />
         );
     }
 }
+
+export default connect(mapStateToProps)(ResultsCount);

@@ -1,5 +1,7 @@
 import React from 'react';
 
 export default props => (
-  <input type="text" />
+  <div>
+    <input type="text" onChange={props.handleChange} />
+  </div>
 );

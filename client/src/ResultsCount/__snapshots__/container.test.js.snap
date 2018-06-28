@@ -19,7 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "countText": "5 movies",
+      "countText": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -31,7 +31,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "countText": "5 movies",
+        "countText": undefined,
       },
       "ref": null,
       "rendered": null,

@@ -5,10 +5,10 @@ import MoviePreview from './component';
 describe('MoviePreview tests', () => {
     test('Component MoviePreview renders correctly', () => {
         const item = {
-            name: 'TestFilm',
-            jenre: 'Horror',
-            year: '2018',
-            posterUrl: '/testurl',
+            title: 'TestFilm',
+            genres: ['Horror'],
+            release_date: '2018',
+            poster_path: '/testurl',
         };
         const component = shallow(<MoviePreview item={item} />);
         expect(component).toMatchSnapshot();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render } from 'enzyme';
-import SearchBySwitcher from './container';
+import { SearchBySwitcher } from './container';
 
 describe('SearchBySwitcher Tests', () => {
     test('Component SearchBySwitcher renders correctly', () => {

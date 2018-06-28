@@ -20,36 +20,31 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <img
-        alt="test title"
-        src="/testurl"
-      />,
+      "children": <Link
+        replace={false}
+        to="/movies/undefined"
+      >
+        <img
+          alt="test title"
+          src="/testurl"
+          width="100%"
+        />
+      </Link>,
+      "className": "col",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "alt": "test title",
-        "src": "/testurl",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "img",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": <img
           alt="test title"
           src="/testurl"
+          width="100%"
         />,
+        "replace": false,
+        "to": "/movies/undefined",
       },
       "ref": null,
       "rendered": Object {
@@ -59,10 +54,63 @@ ShallowWrapper {
         "props": Object {
           "alt": "test title",
           "src": "/testurl",
+          "width": "100%",
         },
         "ref": null,
         "rendered": null,
         "type": "img",
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Link
+          replace={false}
+          to="/movies/undefined"
+        >
+          <img
+            alt="test title"
+            src="/testurl"
+            width="100%"
+          />
+        </Link>,
+        "className": "col",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <img
+            alt="test title"
+            src="/testurl"
+            width="100%"
+          />,
+          "replace": false,
+          "to": "/movies/undefined",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "test title",
+            "src": "/testurl",
+            "width": "100%",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": [Function],
       },
       "type": "div",
     },
