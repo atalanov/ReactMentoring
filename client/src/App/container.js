@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router';
 import Component from './component';
 import actions from '../actions/filter-action';
 
@@ -15,12 +16,11 @@ function mapDispatchToProps(dispatch) {
 }
 
 class App extends React.Component {
-    componentDidMount() {
-        this.props.filterActions.get(this.props.filter);
-    }
     render() {
-        return (<Component />);
+        return (<Component>
+          {this.props.children}
+        </Component>);
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

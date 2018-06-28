@@ -13,4 +13,8 @@ export default {
         Object.keys(filter).forEach(key => url.searchParams.append(key, filter[key]));
         return fetch(url).then(handleResponse);
     },
+    getByID: (id) => {
+        const url = new URL(API_URL);
+        return fetch(`${url}/${id}`).then(handleResponse);
+    }
 };

@@ -52,6 +52,21 @@ export default function reducer(state = initialState, action) {
                     reporter: action.reporter,
                 },
             };
+        case actions.GETBYID_SUCCESS:
+            return {
+                ...state,
+                movie: action.data,
+            };
+        case actions.GETBYID_ERROR:
+            return {
+                ...state,
+                error: action.error,
+            };
+        case actions.GETBYID_PENDING:
+            return {
+                ...state,
+                pending: action.pending,
+            };
         default:
             return state;
     }

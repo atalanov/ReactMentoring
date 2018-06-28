@@ -1,6 +1,6 @@
-import utils from './utils';
+import { Logger } from './utils';
 
-const logResult = utils.Logger.log('anything', 'smth else');
+const logResult = Logger.log('anything', 'smth else');
 test('utils work', () => {
     expect(logResult).toBe(true);
 });
