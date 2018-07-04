@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --config ./config/webpack.config.babel.js --bail -p",
-    "start": "webpack-dev-server --config config/webpack.config.babel.js"
+    "build": "webpack --config ./config/webpack.config.ssr.babel.js --bail -p",
+    "start": "cross-env NODE_ENV=development node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,6 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^22.4.3",
     "react-redux": "^5.0.7",
-    "react-router": "^4.2.0",
     "redux": "^4.0.0",
     "regenerator-runtime": "^0.11.1",
     "style-loader": "^0.21.0",
@@ -45,17 +44,23 @@
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.3",
+    "html-webpack-plugin": "^3.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mini-css-extract-plugin": "^0.4.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.3.3",
     "uglifyjs-webpack-plugin": "^1.2.5",
-    "html-webpack-plugin": "^3.2.0",
-    "express": "^4.16.3"
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-hot-middleware": "^2.22.2",
+    "webpack-hot-server-middleware": "^0.5.0",
+    "webpack-merge": "^4.1.3",
+    "webpack-node-externals": "^1.7.2"
   }
 }
