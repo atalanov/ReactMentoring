@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import { Logger as logger } from './utils';
 import Component from './component';

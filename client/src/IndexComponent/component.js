@@ -1,3 +1,4 @@
+// @flow
 import 'isomorphic-fetch';
 import 'babel-polyfill';
 import React from 'react';

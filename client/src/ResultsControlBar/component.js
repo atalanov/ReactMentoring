@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import ResultsCount from '../ResultsCount';
 import ResultsSorting from '../ResultsSorting';

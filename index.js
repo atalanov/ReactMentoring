@@ -1,3 +1,4 @@
+// @flow
 const express = require('express');
 
 const port = 8000;
@@ -16,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
     server.use(webpackHotServerMiddleware(compiler));
   } else {
     console.log('NOT DEV');
-    const serverRenderer = require('../public/js/serverRenderer').default;
+    const serverRenderer = require('../dist/js/serverRenderer').default;
     console.log(serverRenderer);
     server.use(express.static('public'));
     server.use(serverRenderer());

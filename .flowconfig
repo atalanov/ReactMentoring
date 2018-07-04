@@ -1,0 +1,14 @@
+[ignore]
+.*/__snapshots__/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
+
+[untyped]
+.*/node_modules/.*

@@ -1,3 +1,4 @@
+// @flow
 import { actions } from '../constants/constants';
 import utils from './utils';
 

@@ -1,3 +1,4 @@
+// @flow
 import { actions, events } from '../constants/constants';
 
 const initialState = {

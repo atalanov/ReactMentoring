@@ -1,3 +1,4 @@
+// @flow
 import { API_URL } from '../constants/constants';
 
 function handleResponse(response) {

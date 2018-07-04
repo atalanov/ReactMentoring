@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import ResultSortingComponent from './component';
 

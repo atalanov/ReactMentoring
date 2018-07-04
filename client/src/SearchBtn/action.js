@@ -1,3 +1,4 @@
+// @flow
 import { actions } from '../constants/constants';
 import filterActions from '../actions/filter-action';
 

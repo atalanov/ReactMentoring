@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import MovieImage from '../MovieImage';
 import MovieDescription from '../MovieDescription';
