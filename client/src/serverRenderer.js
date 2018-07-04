@@ -3,7 +3,22 @@ import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import IndexComponent from './IndexComponent';
 import configureStore from './store';
+import { actions, events } from './constants/constants';
 
+const computeInitialState = params => ({
+    previews: {},
+    filter: {
+        search: params.search || '',
+        searchBy: params.searchBy || 'title',
+        sortBy: params.sortBy || 'title',
+        sortOrder: params.sortOrder || 'asc',
+        filter: [],
+        offset: 0,
+        limit: 18,
+    },
+    pendingEvent: { event: events.UPDATE, reporter: 'initial' },
+    pending: false,
+});
 
 function renderHTML(html, preloadedState) {
   return `
@@ -29,7 +44,8 @@ function renderHTML(html, preloadedState) {
 
 export default function serverRenderer() {
   return (req, res) => {
-    const store = configureStore();
+
+    const store = configureStore(computeInitialState(req.params));
     // This context object contains the results of the render
     const context = {};
 
